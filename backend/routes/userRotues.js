@@ -1,8 +1,8 @@
-const { Router } = require("express");
-const { handleSignup } = require("../controllers/userControler");
-const router = Router();
+import { Router as router } from "express";
+import { handleSignup } from "../controllers/userControler";
 
 router.post("/signup",handleSignup)
 
 
-module.exports = { router };
+
+export {router as UserRouter}

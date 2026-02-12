@@ -8,6 +8,7 @@ import {
 import SearchBar from "./SearchBar";
 import CartDrawer from "../layout/CartDrawer";
 import { IoMdClose } from "react-icons/io";
+import CodeCartLogo from "../../assets/CodeCart.png";
 
 function Navbar() {
   const [isDrawerOpen, setisDrawerOpen] = useState(false);
@@ -17,15 +18,22 @@ function Navbar() {
   };
   return (
     <>
-      <nav className="container mx-auto flex items-center justify-between py-4 px-6">
-        <div className="">
-          <Link to={"/"} className="text-2xl font-medium">
-            ShopIt
+      <nav className="container overflow-hidden mx-auto flex items-center justify-between max-h-[90px] px-6">
+        <div className="overflow-hidden">
+          <Link
+            to={"/"}
+            className="text-2xl font-medium"
+          >
+            <img
+              src={CodeCartLogo}
+              className="w-[200px] max-h-[100px]"
+              alt=""
+            />
           </Link>
         </div>
         <div className="hidden md:flex space-x-6">
           <Link
-            to={"/#"}
+            to={"/collection/all"}
             className="text-gray-700 hover:text-black text-sm font-medium uppercase"
           >
             Men

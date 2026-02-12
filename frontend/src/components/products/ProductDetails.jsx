@@ -70,7 +70,7 @@ const similarProducts = [
 ];
 
 const ProductDetails = () => {
-  const [mainImage, setmainImage] = useState("");
+  const [mainImage, setmainImage] = useState("http://");
   const [selectedSize, setselectedSize] = useState("");
   const [selectedColor, setselectedColor] = useState("");
   const [quantity, setquantity] = useState(1);
@@ -106,10 +106,10 @@ const ProductDetails = () => {
   }, [selectedProduct]);
 
   return (
-    <div className="p-6">
+    <div className="p-6 ">
       <div className="max-w-6xl mx-auto bg-white p-8 rounded-lg">
-        <div className="flex flex-col md:flex-row">
-          <div className="hidden md:flex flex-col space-y-4 mr-6">
+        <div className="flex  flex-col md:flex-row">
+          <div className="hidden  md:flex flex-col space-y-4 mr-6">
             {selectedProduct.images.map((image, i) => (
               <img
                 key={i}
@@ -129,7 +129,7 @@ const ProductDetails = () => {
               />
             </div>
           </div>
-          <div className="md:hidden flex overscroll-x-auto space-x-4 mb-4">
+          <div className="md:hidden bg-red-300 flex overscroll-x-auto space-x-4 mb-4">
             {selectedProduct.images.map((image, i) => (
               <img
                 key={i}
