@@ -1,30 +1,17 @@
-// let obj = {
-//     name:"nikhil",
-//     age:34,
-//     roll:19,
-//     add:"kalkaji"
-// }
+let ar = [10, 20, 30];
 
-let obj = [
-  ["name", "nikhi", "naam", "nik"],
-  ["age", 34],
-  ["roll", 19],
-  ["add", "kalkaji"],
-];
-
-console.log(Object.fromEntries(obj));
-
-
-for (let i = 0; i < n; i++) {
-  
-  for (let j = 0; j < m; j++) {
-   
-    
-  }
-  
-}
-
-for (let i = 0; i < k; i++) {
-  const element = array[i];
-  
-}
+let r = ar.reduce((acc, item, index, arr) => {
+  console.log(
+    "start",
+    "accumulator",
+    acc,
+    "item",
+    item,
+    "index",
+    index,
+    "array:",
+    arr,
+    "end",
+  );
+});
+// console.log(r)

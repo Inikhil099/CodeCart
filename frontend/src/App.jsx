@@ -10,6 +10,8 @@ import CollectionPage from "./pages/CollectionPage";
 import ProductDetails from "./components/products/ProductDetails";
 import Checkout from "./components/cart/Checkout";
 import OrderConfirmation from "./pages/OrderConfirmation";
+import OrderDetails from "./pages/OrderDetails";
+import MyOrders from "./pages/MyOrders";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -25,7 +27,9 @@ function App() {
           <Route path="collection/:collection" element={<CollectionPage />} />
           <Route path="product/:id" element={<ProductDetails />} />
           <Route path="checkout" element={<Checkout />} />
-          <Route path="order-confirmation" element={<OrderConfirmation/>}/>
+          <Route path="order-confirmation" element={<OrderConfirmation />} />
+          <Route path="order/:id" element={<OrderDetails />} />
+          <Route path="my-orders" element={<MyOrders />} />
         </Route>
       </Routes>
     </BrowserRouter>

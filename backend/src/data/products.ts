@@ -1,6 +1,6 @@
 // product.js:
 
-const products = [
+export const sampleproducts = [
   {
     name: "Classic Oxford Button-Down Shirt",
     description:
@@ -987,4 +987,3 @@ const products = [
   },
 ];
 
-module.exports = products;
